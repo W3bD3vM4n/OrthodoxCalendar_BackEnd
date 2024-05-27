@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calendario.Api", "Calendario.Api\Calendario.Api.csproj", "{1CF57B35-305B-49D0-9DF2-E797FA1CC49E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calendario.Data", "Calendario.Data\Calendario.Data.csproj", "{6932B99E-A540-4D33-B7A6-A95FD8D4E0F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calendario.Service", "Calendario.Service\Calendario.Service.csproj", "{B25D00EE-59F1-4C9E-B5BA-EEF13113B2A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1CF57B35-305B-49D0-9DF2-E797FA1CC49E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CF57B35-305B-49D0-9DF2-E797FA1CC49E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CF57B35-305B-49D0-9DF2-E797FA1CC49E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CF57B35-305B-49D0-9DF2-E797FA1CC49E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6932B99E-A540-4D33-B7A6-A95FD8D4E0F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6932B99E-A540-4D33-B7A6-A95FD8D4E0F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6932B99E-A540-4D33-B7A6-A95FD8D4E0F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6932B99E-A540-4D33-B7A6-A95FD8D4E0F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B25D00EE-59F1-4C9E-B5BA-EEF13113B2A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B25D00EE-59F1-4C9E-B5BA-EEF13113B2A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B25D00EE-59F1-4C9E-B5BA-EEF13113B2A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B25D00EE-59F1-4C9E-B5BA-EEF13113B2A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E4D618AA-0953-436A-9DB6-F6045159081F}
+	EndGlobalSection
+EndGlobal
