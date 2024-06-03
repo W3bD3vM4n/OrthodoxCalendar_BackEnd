@@ -12,6 +12,17 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Add Cross-Origin Resource Sharing (CORS) mechanism in the server
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("NuevaPolitica", policy =>
+    {
+        policy.AllowAnyOrigin()
+        .AllowAnyHeader()
+        .AllowAnyMethod();
+    });
+});
+
 var connectionString = builder.Configuration.GetConnectionString("CalendarioConnection");
 builder.Services.AddDbContext<CalendarioDbContext>(options => options
     .UseLazyLoadingProxies()
@@ -34,6 +45,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("NuevaPolitica");
 
 app.UseAuthorization();
 
