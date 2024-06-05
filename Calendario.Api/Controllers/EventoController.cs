@@ -8,7 +8,7 @@ namespace Calendario.Api.Controllers
     [ApiController]
     public class EventoController : Controller
     {
-        // Dependency injection
+        // Inyección de Dependecias
         private readonly EventoService _eventoService;
 
         public EventoController(EventoService eventoService)

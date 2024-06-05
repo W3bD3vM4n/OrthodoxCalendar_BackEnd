@@ -9,9 +9,6 @@ namespace Calendario.Service.Dto
 {
     public class EventoCreateRequest
     {
-        [JsonPropertyName("titulo")]
-        public string Titulo { get; set; }
-
         [JsonPropertyName("fechaInicio")]
         public DateTime FechaInicio { get; set; }
 
@@ -24,7 +21,28 @@ namespace Calendario.Service.Dto
         [JsonPropertyName("repeticionId")]
         public int RepeticionId { get; set; }
 
-        [JsonPropertyName("detalles")]
-        public string? Detalles { get; set; }
+        [JsonPropertyName("descripcionDia")]
+        public string DescripcionDia { get; set; }
+
+        [JsonPropertyName("tonoCantico")]
+        public int TonoCantico { get; set; }
+
+        [JsonPropertyName("guiaAyuno")]
+        public string GuiaAyuno { get; set; }
+
+        [JsonPropertyName("fiestasLiturgicas")]
+        public string? FiestasLiturgicas { get; set; }
+
+        [JsonPropertyName("santosCelebrados")]
+        public string SantosCelebrados { get; set; }
+
+        [JsonPropertyName("guiaLiturgia")]
+        public string GuiaLiturgia { get; set; }
+
+        [JsonPropertyName("lecturaDiariaEpistola")]
+        public string? LecturaDiariaEpistola { get; set; }
+
+        [JsonPropertyName("lecturaDiariaEvangelio")]
+        public string? LecturaDiariaEvangelio { get; set; }
     }
 }
