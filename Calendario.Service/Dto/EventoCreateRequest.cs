@@ -25,7 +25,7 @@ namespace Calendario.Service.Dto
         public string DescripcionDia { get; set; }
 
         [JsonPropertyName("tonoCantico")]
-        public int TonoCantico { get; set; }
+        public string TonoCantico { get; set; }
 
         [JsonPropertyName("guiaAyuno")]
         public string GuiaAyuno { get; set; }
@@ -44,5 +44,11 @@ namespace Calendario.Service.Dto
 
         [JsonPropertyName("lecturaDiariaEvangelio")]
         public string? LecturaDiariaEvangelio { get; set; }
+
+        [JsonPropertyName("tituloIcono")]
+        public string? TituloIcono { get; set; }
+
+        [JsonPropertyName("descripcionIcono")]
+        public string? DescripcionIcono { get; set; }
     }
 }

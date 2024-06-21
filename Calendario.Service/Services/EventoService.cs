@@ -48,7 +48,9 @@ namespace Calendario.Service.Services
                         SantosCelebrados = evento.SantosCelebrados,
                         GuiaLiturgia = evento.GuiaLiturgia,
                         LecturaDiariaEpistola = evento.LecturaDiariaEpistola,
-                        LecturaDiariaEvangelio = evento.LecturaDiariaEvangelio
+                        LecturaDiariaEvangelio = evento.LecturaDiariaEvangelio,
+                        TituloIcono = evento.TituloIcono,
+                        DescripcionIcono = evento.DescripcionIcono
                     });
                 }
 
@@ -83,7 +85,9 @@ namespace Calendario.Service.Services
                     SantosCelebrados = evento.SantosCelebrados,
                     GuiaLiturgia = evento.GuiaLiturgia,
                     LecturaDiariaEpistola = evento.LecturaDiariaEpistola,
-                    LecturaDiariaEvangelio = evento.LecturaDiariaEvangelio
+                    LecturaDiariaEvangelio = evento.LecturaDiariaEvangelio,
+                    TituloIcono = evento.TituloIcono,
+                    DescripcionIcono = evento.DescripcionIcono
                 };
 
                 return eventoResponse;
@@ -111,7 +115,9 @@ namespace Calendario.Service.Services
                     SantosCelebrados = peticion.SantosCelebrados,
                     GuiaLiturgia = peticion.GuiaLiturgia,
                     LecturaDiariaEpistola = peticion.LecturaDiariaEpistola,
-                    LecturaDiariaEvangelio = peticion.LecturaDiariaEvangelio
+                    LecturaDiariaEvangelio = peticion.LecturaDiariaEvangelio,
+                    TituloIcono = peticion.TituloIcono,
+                    DescripcionIcono = peticion.DescripcionIcono
                 };
 
                 _calendarioDbContext.Eventos.Add(evento);
@@ -144,6 +150,8 @@ namespace Calendario.Service.Services
                 evento.GuiaLiturgia = peticion.GuiaLiturgia;
                 evento.LecturaDiariaEpistola = peticion.LecturaDiariaEpistola;
                 evento.LecturaDiariaEvangelio = peticion.LecturaDiariaEvangelio;
+                evento.TituloIcono = peticion.TituloIcono;
+                evento.DescripcionIcono = peticion.DescripcionIcono;
 
                 _calendarioDbContext.SaveChanges();
 
