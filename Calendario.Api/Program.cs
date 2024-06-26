@@ -29,7 +29,9 @@ builder.Services.AddDbContext<CalendarioDbContext>(options => options
     .UseSqlServer(connectionString)
 );
 
+// Register of 'Services' with the Dependency Injection container
 builder.Services.AddTransient<EventoService>();
+builder.Services.AddTransient<UsuarioService>();
 
 // Ignore JSON circular references
 builder.Services.AddControllers().AddJsonOptions(x => x.JsonSerializerOptions
